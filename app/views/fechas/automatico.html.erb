@@ -1,0 +1,14 @@
+<h2>Automatico</h2>
+
+<%= link_to "Agregar componente fecha", agregar_comp_fecha_path, data: { turbo_method: :post } %>
+<%= link_to "Quitar componente fecha", quitar_comp_fecha_path, data: { turbo_method: :delete } %>
+
+<%= form_with do |f| %>
+
+    <div id="componentes">
+        Actualizando aquí ♻
+    </div>
+
+<%= f.submit "Enviar fechas" %>
+<% end %>
+

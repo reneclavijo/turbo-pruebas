@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_06_002113) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_06_123631) do
+  create_table "fechas", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "productos", force: :cascade do |t|
     t.string "nombre"
     t.decimal "precio"

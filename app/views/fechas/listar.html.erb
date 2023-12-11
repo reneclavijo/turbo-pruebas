@@ -1,0 +1,21 @@
+<h1>FECHAS CON TURBO</h1>
+
+<%= turbo_frame_tag "turbo-1" do %>
+    LISTANDO 📚
+    <div>
+        <%= link_to "Actualizando a mi mismo", fecha_path %>
+    </div>
+<% end %>
+
+<br>
+
+<%= turbo_frame_tag "turbo-2" do %>
+    ESPERANDO 🚙🚗
+<% end %>
+
+<div>
+    <%= link_to "Actualizar turbo-1 sin estar dentro", fecha_path, data: { turbo_frame: "turbo-1" } %>
+</div>
+<div>
+    <%= link_to "Actualizar turbo-2 sin estar dentro", fecha_path, data: { turbo_frame: "turbo-2" } %>
+</div>
